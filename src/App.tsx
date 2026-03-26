@@ -1,9 +1,7 @@
+import { Button } from './components/Button';
+
 function App() {
-  return (
-    <div>
-      <h1>Vite Practice</h1>
-    </div>
-  )
+  return <Button>클릭</Button>;
 }
 
-export default App
+export default App;
