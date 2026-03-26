@@ -11,6 +11,9 @@ importers:
       '@vanilla-extract/css':
         specifier: ^1.20.0
         version: 1.20.0
+      '@vanilla-extract/recipes':
+        specifier: ^0.5.7
+        version: 0.5.7(@vanilla-extract/css@1.20.0)
       '@vanilla-extract/vite-plugin':
         specifier: ^5.2.1
         version: 5.2.1(@types/node@24.12.0)(esbuild@0.27.4)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.4))
@@ -579,6 +582,11 @@ packages:
 
   '@vanilla-extract/private@1.0.9':
     resolution: {integrity: sha512-gT2jbfZuaaCLrAxwXbRgIhGhcXbRZCG3v4TTUnjw0EJ7ArdBRxkq4msNJkbuRkCgfIK5ATmprB5t9ljvLeFDEA==}
+
+  '@vanilla-extract/recipes@0.5.7':
+    resolution: {integrity: sha512-Fvr+htdyb6LVUu+PhH61UFPhwkjgDEk8L4Zq9oIdte42sntpKrgFy90MyTRtGwjVALmrJ0pwRUVr8UoByYeW8A==}
+    peerDependencies:
+      '@vanilla-extract/css': ^1.0.0
 
   '@vanilla-extract/vite-plugin@5.2.1':
     resolution: {integrity: sha512-1dmCgmTmls/c4G+t453vZIzZ+82ftr+JC2J48C1drVkiwtZ7DscYSIko9Ci0CyDptBLWz5EO9fWnqzfHnns8tg==}
@@ -1783,6 +1791,10 @@ snapshots:
       - supports-color
 
   '@vanilla-extract/private@1.0.9': {}
+
+  '@vanilla-extract/recipes@0.5.7(@vanilla-extract/css@1.20.0)':
+    dependencies:
+      '@vanilla-extract/css': 1.20.0
 
   '@vanilla-extract/vite-plugin@5.2.1(@types/node@24.12.0)(esbuild@0.27.4)(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.4))':
     dependencies:

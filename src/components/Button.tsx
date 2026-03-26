@@ -1,5 +1,13 @@
-import { button } from './Button.css';
+import { buttonVariants } from './Button.css';
 
-export function Button({ children }: { children: React.ReactNode }) {
-  return <button className={button}>{children}</button>;
+type ButtonVariant = keyof typeof buttonVariants;
+
+export function Button({
+  children,
+  variant = 'primary',
+}: {
+  children: React.ReactNode;
+  variant?: ButtonVariant;
+}) {
+  return <button className={buttonVariants[variant]}>{children}</button>;
 }
